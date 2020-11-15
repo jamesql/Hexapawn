@@ -10,6 +10,11 @@ namespace Assets
 	{
 		return "test";
 	}
+
+	Board::Board()
+	{
+	
+	}
 }
 
 
