@@ -13,7 +13,6 @@ namespace Assets
 		char* move(Piece op, Piece np);
 		bool checkMove(Piece p);
 		Move[] getMoves(Team t);
-		char* createBoard();
 		void addPiece(Piece p);
 		void delPiece(Piece p);
 		char* getBoard(); 
@@ -32,7 +31,22 @@ namespace Assets
 
 	class Menu
 	{
-	
+	public:
+		// Vars	
+		Option opt[];
+
+		void addOption(Option op);
+		Menu();
+	};
+
+	class Option
+	{
+	public:
+		// Vars
+		char* str;
+		int ascii;
+
+		Option(char* n_str, int v);
 	};
 
 	class Piece
