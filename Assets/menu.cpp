@@ -7,7 +7,12 @@ namespace Assets
 
 	void Menu::addOption(Option op)
 	{
+	
+	}
 
+	Menu::Menu()
+	{
+	
 	}
 
 }
