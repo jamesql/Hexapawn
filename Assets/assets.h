@@ -66,7 +66,8 @@ namespace Assets
 		void delPiece(Piece p);
 		char* getBoard(); 
 		void printBoard();
-
+		Board();
+		~Board();
 	};
 
 }

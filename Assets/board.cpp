@@ -4,6 +4,12 @@
 
 #include "assets.h"
 
-
+namespace Assets 
+{
+	char* Board::getBoard()
+	{
+		return "test";
+	}
+}
 
 

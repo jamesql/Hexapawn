@@ -6,6 +6,9 @@ using namespace std;
 using namespace Assets;
 
 int main() {
-	Board:test();
+	Board board;
+	char* s_brd = board.getBoard();
+	string str(s_brd);
+	cout << str << endl;
 	return 0;
 }
