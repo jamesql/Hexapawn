@@ -23,7 +23,11 @@ namespace Assets
 
 	class Team
 	{
-
+	public:
+		// Vars
+		int team_id;
+		
+		Team(int tid);
 	};
 
 	class Menu
@@ -36,13 +40,18 @@ namespace Assets
 	public: 
 		// Vars
 		Team tm;
+		int posX;
+		int posY;
 
-		Piece(Team t);
+		Move[] getMoves();
+		Move movePiece(int newX, int newY);		
+
+		Piece(Team t, int x, int y);
 	};
 
 	class Move
 	{
-
+		
 	};
 
 }
