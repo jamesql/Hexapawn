@@ -5,9 +5,9 @@
 namespace Assets 
 {
 
-	class Menu
+	void Menu::addOption(Option op)
 	{
-	
+
 	}
 
 }

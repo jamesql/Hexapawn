@@ -1,24 +1,5 @@
-
 namespace Assets
 {
-
-	class Board
-	{
-	public:
-		// Vars
-		Piece bpcs[9];	
-		Team white;
-		Team black;
-	
-		char* move(Piece op, Piece np);
-		bool checkMove(Piece p);
-		Move[] getMoves(Team t);
-		void addPiece(Piece p);
-		void delPiece(Piece p);
-		char* getBoard(); 
-		void printBoard();
-
-	};
 
 	class Team
 	{
@@ -27,16 +8,6 @@ namespace Assets
 		int team_id;
 		
 		Team(int tid);
-	};
-
-	class Menu
-	{
-	public:
-		// Vars	
-		Option opt[];
-
-		void addOption(Option op);
-		Menu();
 	};
 
 	class Option
@@ -49,6 +20,22 @@ namespace Assets
 		Option(char* n_str, int v);
 	};
 
+	class Menu
+	{
+	public:
+		// Vars	
+		Option opt[10];
+
+		void addOption(Option op);
+		Menu();
+	};
+
+
+	class Move
+	{
+		
+	};
+
 	class Piece
 	{
 	public: 
@@ -57,15 +44,29 @@ namespace Assets
 		int posX;
 		int posY;
 
-		Move[] getMoves();
+		Move* getMoves();
 		Move movePiece(int newX, int newY);		
 
 		Piece(Team t, int x, int y);
 	};
 
-	class Move
+	class Board
 	{
-		
+	public:
+		// Vars
+		Piece bpcs[9];	
+		Team white;
+		Team black;
+	
+		char* move(Piece op, Piece np);
+		bool checkMove(Piece p);
+		Move* getMoves(Team t);
+		Piece getPceAtPos(int x, int y);
+		void addPiece(Piece p);
+		void delPiece(Piece p);
+		char* getBoard(); 
+		void printBoard();
+
 	};
 
 }
