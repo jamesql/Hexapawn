@@ -7,12 +7,14 @@ namespace Assets
 
 	Move* Piece::getMoves()
 	{
-		return null;
+		return nullptr;
 	}
 
 	Move Piece::movePiece(int newX, int newY)
 	{
-		return null;
+		Move* p = nullptr;
+		Move m = *p;
+		return m;
 	}
 
 	Piece::Piece(Team t, int x, int y)
