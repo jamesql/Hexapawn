@@ -6,6 +6,8 @@ using namespace std;
 using namespace Assets;
 
 int main() {
+	Menu m;
+	m.printLogo();
 	Board board;
 	char* s_brd = board.getBoard();
 	string str(s_brd);

@@ -29,6 +29,7 @@ namespace Assets
 		Option opt[10];
 
 		void addOption(Option op);
+		void printLogo();
 		Menu();
 	};
 
