@@ -2,7 +2,7 @@
 #define W_SQ 0xDB
 #define B_SQ 0xFF
 
-#include "assets.h"
+#include "./assets.h"
 
 namespace Assets 
 {
@@ -12,6 +12,11 @@ namespace Assets
 	}
 
 	Board::Board()
+	{
+	
+	}
+
+	Board::~Board()
 	{
 	
 	}

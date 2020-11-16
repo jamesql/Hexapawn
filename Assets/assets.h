@@ -8,7 +8,7 @@ namespace Assets
 		int team_id;
 		
 		Team(int tid);
-		Team();	
+		Team() { }
 	};
 
 	class Option
@@ -19,7 +19,7 @@ namespace Assets
 		int ascii;
 
 		Option(char* n_str, int v);
-		Option();
+		Option() { }
 	};
 
 	class Menu
@@ -35,7 +35,7 @@ namespace Assets
 
 	class Move
 	{
-		Move();
+		Move() { }
 	};
 
 	class Piece
@@ -50,7 +50,7 @@ namespace Assets
 		Move movePiece(int newX, int newY);		
 
 		Piece(Team t, int x, int y);
-		Piece();
+		Piece() { }
 	};
 
 	class Board

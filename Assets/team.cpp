@@ -1,6 +1,6 @@
 // Team Asset
 
-#include "./assets.h"
+#include "assets.h"
 
 namespace Assets
 {
