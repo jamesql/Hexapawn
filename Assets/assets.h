@@ -14,10 +14,14 @@ namespace Assets
 	class Option
 	{
 	public:
+		// Types
+		typedef void (* vfCall)();		
+
 		// Vars
 		char* str;
 		int ascii;
 
+		void GetKeyPress(int v, vfCall func);
 		Option(char* n_str, int v);
 		Option() { }
 	};
