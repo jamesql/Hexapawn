@@ -1,6 +1,7 @@
 // Menu Asset
 
 #include <iostream>
+#include <string>
 #include "assets.h"
 
 using namespace std;
@@ -15,6 +16,8 @@ namespace Assets
 
 	void Menu::printLogo()
 	{
+		// change
+		system("clear");
 		cout << "===================================================" << endl;
 		cout << "    __  __                                         " << endl;
 		cout << "   / / / /__  _  ______ _____  ____ __      ______ " << endl;
