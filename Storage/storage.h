@@ -1,30 +1,40 @@
 #include <map>
+#include <iostream>
+
+using namespace std;
 
 namespace Utility
 {
 
 	class Storage
 	{
+	private:
+		std::map<char*, char*> strList;
 	public:
 		Storage() { }
-
+		
+		// Remake these to switches; Or try again to make them store pointers and deref the pointers to typecast the object.
 		template<class T>
-		T* Store(std::string k,T v)
+		T Store(char* k,T v)
 		{
-			T* a = &v;
-			pList.insert( std::pair<std::string, T*> (k,a) );
-			return a;	
+			if (std::is_same<T, char*>::value) { strList[k] = v; }
+			return v;
 		}
 
 		template<class T>
-		T Read(std::string k) 
+		T Read(char* k)
 		{
-			T* a = pList[k];
-			return *a;	
+			T n;
+			if (std::is_same<T, char*>::value) { return strList[k]; }
+				else return n;
 		}
-	
-	private:
-		static map<std::string, std::any> pList;
-	}
+
+		template<class T>
+		T Modify(char* k, T v)
+		{
+			T n;
+			return n;
+		}
+	};
 
 }
