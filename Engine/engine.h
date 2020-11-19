@@ -4,7 +4,7 @@ namespace Engine
 
 	class Thread
 	{
-	
+		bool isNextFrameAvailable();	
 	}
 
 	class Graphics
@@ -19,7 +19,7 @@ namespace Engine
 
 	class LogicController
 	{
-
+		
 	}
 
 }
